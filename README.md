@@ -28,18 +28,10 @@ maven("https://en-mirror.ir/jitpack")
 ```
 
 ### Worker Setup:
-- <strong>Manual Setup</strong>:
-  - Login to cloudflare
-  - Click on workers & pages tab
-  - Create new worker with optional name and click on deploy
-  - In the new tab, click on edit code
-  - Copy & Paste worker.js codes into opened tab and click on deploy button
 - <strong>CLI Setup</strong>:
   - Ensure you have Node.js installed on your system, then install the Wrangler CLI: 
     - `npm install -g wrangler`
   - Login to your cloudflare account using: `wrangler login`
-  - Update configuration in wrangler.toml:
-    - Set `compatibility_date` field to current date
   - Deploy the worker using: `wrangler deploy`
 - <strong>Bash Setup</strong>:
   - Ensure you have Node.js installed on your system
